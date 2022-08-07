@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: проект «Седона»</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+
+      <a class="page-header__logo">
+        <img src="/source/img/Logo/sedona-mobile.svg.svg" width="102" height="84" alt="логотип сайта Седона">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть</span>
+        </button>
+        <div class="wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                Htmlacademy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    <main class="page-main">
+
+      <section class="description">
+        <h1 class="description__title">Фото и видео</h1>
+        <p class="description__slogan">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут вам<br> забыть о политике и экономике.</p>
+       </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <footer class="gallery__footer">
+          <figure class="figure">
+            <img src="/source/img/picture/road-mobile.jpg.png" width="280" height="280" alt="вид на трассу пустыни во время заката">
+            <h3 class="figure__title">Неродные просторы</h3>
+            <figcaption class="figure__caption">Автор фото: Борис</figcaption>
+            <div class="meta">
+              <span class="meta-likes">1350</span>
+            </div>
+          </figure>
+          <figure class="figure">
+            <img src="/source/img/picture/flower-mobile.jpg.png" width="280" height="280" alt="местное растение В Красных горах Седоны">
+            <h3 class="figure__title">Местная растительность</h3>
+            <figcaption class="figure__caption">Автор фото: Сергей</figcaption>
+            <div class="meta">
+              <span class="meta-likes">143</span>
+            </div>
+          </figure>
+          <figure class="figure">
+            <img src="/source/img/picture/serpentine-mobile.jpg.png" width="280" height="280" alt="серпантин в горах">
+            <h3 class="figure__title">Дорога на север</h3>
+            <figcaption class="figure__caption">Автор фото: Пётр</figcaption>
+            <div class="meta">
+              <span class="meta-likes">96</span>
+            </div>
+          </figure>
+          <figure class="figure">
+            <img src="/source/img/picture/bridgOfDevil-mobile .png" width="280" height="280" alt="мост дьявола">
+            <h3 class="figure__title">Мост дьявола</h3>
+            <figcaption class="figure__caption">Автор фото: Антон</figcaption>
+            <div class="meta">
+              <span class="meta-likes">254</span>
+            </div>
+          </figure>
+        </footer>
+      </section>
+
+      <article class="video-presentation">
+        <div class="description">
+          <h2 class="description__title">Все еще сомневаетесь?</h2>
+          <p class="description__slogan">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+        </div>
+        <img src="/source/img/picture/video-mobile.jpg" width="320" height="201">
+        <div class="video-presentation__panel video-panel">
+          <div class="video-panel__range">
+            <input type="range" min="0" max="120">
+          </div>
+          <div class="video-panel__controls">
+            <button type="button" aria-label="кнопка реплея">
+              <img src="/source/img/svg-controls/replay.svg" width="16" height="20" alt="кнопка реплея">
+            </button>
+            <button type="button" aria-label="кнопка субтитров">
+              <img src="/source/img/svg-controls/subtitles.svg" width="32" height="20" alt="кнопка субтитров">
+            </button>
+            <button type="button" aria-label="кнопка полного экрана">
+              <img src="/source/img/svg-controls/fullscreen.svg" width="20" height="20" alt="фулскрин">
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <div class="page-footer__heshtag">
+          <p>#visitsedona</p>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Твиттере</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="/source/img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
