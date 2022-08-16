@@ -2,13 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: проект «Седона», форма отзыва</title>
   </head>
   <body class="page__body">
     <header class="page-header">
 
-      <a class="page-header__logo">
-        <img src="/source/img/Logo/sedona-mobile.svg.svg" width="102" height="84" alt="логотип сайта Седона">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/Logo/sedona-mobile.svg.svg" width="102" height="84" alt="логотип сайта Седона">
       </a>
 
       <nav class="main-nav">
@@ -23,11 +28,11 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">
+              <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a href="#">
                 Форма отзыва
               </a>
@@ -43,9 +48,9 @@
     </header>
 
     <main class="main-page">
-      <section class="description__heading">
-        <h1 class="description__heading__title">Оставьте свой отзыв</h1>
-        <p class="description__heading__slogan">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br> посещенных вами<br> достопримечательностях</p>
+      <section class="description">
+        <h1 class="description__title">Оставьте свой отзыв</h1>
+        <p class="description__slogan">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br> посещенных вами<br> достопримечательностях</p>
       </section>
 
       <section class="yourself">
@@ -78,7 +83,7 @@
             <ul class="fieldset__list">
               <li class="fieldset__item item">
                 <label class="item__name">
-                  <input class="item__input item__input--size-m item__input--loge-phone" type="tel" name="tel" required placeholder="Введите телефон">Контактный телефон*:
+                  <input class="item__input item__input--size-m item__input--loge-phone" type="tel" name="tel" required placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">Контактный телефон*:
                 </label>
               </li>
               <li class="fieldset__item item">
@@ -93,19 +98,19 @@
             <legend class="fieldset-legend">Ваше общее впечатление:</legend>
             <ul class="fieldset__item">
               <li class="fieldset__item item">
-                <labal class="item__name">
+                <label class="item__name">
                   <input class="item__radio" type="radio" name="impression" value="positive" checked>Скорее положительное
-                </labal>
+                </label>
               </li>
               <li class="fieldset__item item">
-                <labal class="item__name">
+                <label class="item__name">
                   <input class="item__radio" type="radio" name="impression" value="negative">Скорее отрицательное
-                </labal>
+                </label>
               </li>
               <li class="fieldset__item item">
-                <labal class="item__name">
+                <label class="item__name">
                   <input class="item__radio" type="radio" name="impression" value="neutral">Затрудняюсь ответить
-                </labal>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -136,10 +141,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="fieldset">
-            <legend class="fieldset__legend">Опишите свои эмоции:</legend>
-            <textarea class="textarea" name="fmy impressions" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
+          <div class="fieldset">
+            <label class="fieldset__legend" for="my-impression">Опишите свои эмоции:</label>
+            <textarea class="textarea" name="my impressions" rows="5" placeholder="Опишите подробно все свои восторги" id="my-impression"></textarea>
+          </div>
           <button class="button button__form">Отправить отзыв</button>
         </form>
       </section>
@@ -171,7 +176,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="/source/img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
+            <img src="img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
           </a>
         </div>
       </div>

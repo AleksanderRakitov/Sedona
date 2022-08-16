@@ -2,13 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: проект «Седона»</title>
   </head>
   <body class="page__body">
     <header class="page-header">
 
-      <a class="page-header__logo">
-        <img src="/source/img/Logo/sedona-mobile.svg.svg" width="102" height="84" alt="логотип сайта Седона">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/Logo/sedona-mobile.svg.svg" width="102" height="84" alt="логотип сайта Седона">
       </a>
 
       <nav class="main-nav">
@@ -22,7 +27,7 @@
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a href="#">
                 Фото и видео
               </a>
@@ -53,36 +58,24 @@
         <h2 class="visually-hidden">Галерея</h2>
         <footer class="gallery__footer">
           <figure class="figure">
-            <img src="/source/img/picture/road-mobile.jpg.png" width="280" height="280" alt="вид на трассу пустыни во время заката">
+            <img src="img/picture/road-mobile.jpg.png" width="280" height="280" alt="вид на трассу пустыни во время заката">
             <h3 class="figure__title">Неродные просторы</h3>
-            <figcaption class="figure__caption">Автор фото: Борис</figcaption>
-            <div class="meta">
-              <span class="meta-likes">1350</span>
-            </div>
+            <figcaption class="figure__caption">Автор фото: Борис <span class="meta-likes">1350</span></figcaption>
           </figure>
           <figure class="figure">
-            <img src="/source/img/picture/flower-mobile.jpg.png" width="280" height="280" alt="местное растение В Красных горах Седоны">
+            <img src="img/picture/flower-mobile.jpg.png" width="280" height="280" alt="местное растение В Красных горах Седоны">
             <h3 class="figure__title">Местная растительность</h3>
-            <figcaption class="figure__caption">Автор фото: Сергей</figcaption>
-            <div class="meta">
-              <span class="meta-likes">143</span>
-            </div>
+            <figcaption class="figure__caption">Автор фото: Сергей <span class="meta-likes">143</span></figcaption>
           </figure>
           <figure class="figure">
-            <img src="/source/img/picture/serpentine-mobile.jpg.png" width="280" height="280" alt="серпантин в горах">
+            <img src="img/picture/serpentine-mobile.jpg.png" width="280" height="280" alt="серпантин в горах">
             <h3 class="figure__title">Дорога на север</h3>
-            <figcaption class="figure__caption">Автор фото: Пётр</figcaption>
-            <div class="meta">
-              <span class="meta-likes">96</span>
-            </div>
+            <figcaption class="figure__caption">Автор фото: Пётр <span class="meta-likes">96</span></figcaption>
           </figure>
           <figure class="figure">
-            <img src="/source/img/picture/bridgOfDevil-mobile .png" width="280" height="280" alt="мост дьявола">
+            <img src="img/picture/bridgOfDevil-mobile.png" width="280" height="280" alt="мост дьявола">
             <h3 class="figure__title">Мост дьявола</h3>
-            <figcaption class="figure__caption">Автор фото: Антон</figcaption>
-            <div class="meta">
-              <span class="meta-likes">254</span>
-            </div>
+            <figcaption class="figure__caption">Автор фото: Антон <span class="meta-likes">254</span></figcaption>
           </figure>
         </footer>
       </section>
@@ -92,20 +85,20 @@
           <h2 class="description__title">Все еще сомневаетесь?</h2>
           <p class="description__slogan">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
         </div>
-        <img src="/source/img/picture/video-mobile.jpg" width="320" height="201">
+        <img src="img/picture/video-mobile.jpg" width="320" height="201" alt="дорога серпантина">
         <div class="video-presentation__panel video-panel">
           <div class="video-panel__range">
             <input type="range" min="0" max="120">
           </div>
           <div class="video-panel__controls">
             <button type="button" aria-label="кнопка реплея">
-              <img src="/source/img/svg-controls/replay.svg" width="16" height="20" alt="кнопка реплея">
+              <img src="img/svg-controls/replay.svg" width="16" height="20" alt="кнопка реплея">
             </button>
             <button type="button" aria-label="кнопка субтитров">
-              <img src="/source/img/svg-controls/subtitles.svg" width="32" height="20" alt="кнопка субтитров">
+              <img src="img/svg-controls/subtitles.svg" width="32" height="20" alt="кнопка субтитров">
             </button>
             <button type="button" aria-label="кнопка полного экрана">
-              <img src="/source/img/svg-controls/fullscreen.svg" width="20" height="20" alt="фулскрин">
+              <img src="img/svg-controls/fullscreen.svg" width="20" height="20" alt="фулскрин">
             </button>
           </div>
         </div>
@@ -138,7 +131,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="/source/img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
+            <img src="img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
           </a>
         </div>
       </div>
