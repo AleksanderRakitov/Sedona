@@ -1,7 +1,14 @@
 .main-nav__item {
-  a {
-    color: @white;
-    display: flex;
-    justify-content: center;
+  @media (min-width: @tablet-width) {
+    padding: 16px 33px 14px;
+    &:nth-child(2) {
+      margin-right: 150px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    padding: 16px 77px 14px;
+    &:nth-child(2) {
+      margin-right: 230px;
+    }
   }
 }

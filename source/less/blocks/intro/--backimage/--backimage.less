@@ -1,6 +1,10 @@
 .intro--backimage {
-  background-image: url("../../../../img/picture/back-mobile.jpg");
+  background-image: url("../../source/img/picture/back-desktop.jpg");
   background-position: center top;
-  background-size: 320px 389px;
+  background-size: 100% 389px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100% 518px;
+  }
 }

@@ -1,6 +1,11 @@
 .main-content__text {
-  color: @white;
-  font-size: 14px;
-  line-height: 21px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
