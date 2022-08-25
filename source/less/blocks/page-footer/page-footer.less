@@ -3,9 +3,11 @@
   color: @dark;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-items: center;
   }
 }
