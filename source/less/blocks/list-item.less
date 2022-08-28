@@ -1,0 +1,40 @@
+.list-item__text {
+    padding: 55px 12px 39px 12px;
+    background-color: @darkblue;
+    text-align: center;
+
+    &--padding {
+      padding: 39px 16px 35px 15px;
+    }
+  
+    &--pic {
+      background-image: url("../../source/img/picture/item-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: 0 -15px;
+  
+      @media (min-width: @tablet-width) {
+        background-image: none;
+      }
+    }
+  
+    @media (min-width: @tablet-width) {
+      padding: 40px 32px 42px;
+    }
+  }
+
+  .list-item__text-2 {
+    padding: 25px 6px 24px 8px;
+    text-align: center;
+  
+    @media (min-width: @tablet-width) {
+      min-height: 256px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+
+  

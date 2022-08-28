@@ -1,0 +1,66 @@
+.fieldset {
+  border: none;
+}
+
+.fieldset__impressions {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.fieldset__name {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.fieldset__contacts {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.fieldset__places {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.fieldset__textarea {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.fieldset-legend__radio {
+  margin-bottom: 36px;
+}
+
+.fieldset-legend__contact {
+  margin-bottom: 17px;
+}
+
+.fieldset-legend__name {
+  margin-bottom: 19px;
+}
+
+.fieldset-legend__textarea {
+  display: block;
+  margin-bottom: 15px;
+}
+
