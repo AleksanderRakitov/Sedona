@@ -64,7 +64,7 @@
 
           <form class="yourself__form" method="get" name="yourself__form" action="https://echo.htmlacademy.ru/" target="_blank">
             <fieldset class="fieldset fieldset__name fieldset--border-top">
-              <legend class="fieldset-legend__name bold-fonts">Представьтесь:</legend>
+              <legend class="fieldset__legend fieldset-legend__name bold-fonts">Представьтесь:</legend>
               <ul class="fieldset__list clear-list">
                 <li class="fieldset__item item">
                   <label class="item__name normal-fonts" for="name">
@@ -88,8 +88,8 @@
             </fieldset>
 
             <fieldset class="fieldset fieldset__contacts">
-              <legend class="fieldset-legend__contact bold-fonts">Контактная информация:</legend>
-              <ul class="fieldset__list clear-list">
+              <legend class="fieldset__legend fieldset-legend__contact bold-fonts fieldset__legend--stroke">Контактная информация:</legend>
+              <ul class="fieldset__list fieldset__list--flex clear-list">
                 <li class="fieldset__item item-2">
                   <label class="item__name item__name--margin normal-fonts" for="tel">
                     <span class="hidden">Контактный</span> телефон*:
@@ -97,7 +97,7 @@
                   <input class="item__input item__input--size-m item__input--loge-phone bold-fonts" type="tel" name="tel" required placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" id="tel">
                   </li>
                 <li class="fieldset__item item-2">
-                  <label class="item__name item__name--margin normal-fonts" for="email">
+                  <label class="item__name item__name-email item__name--margin normal-fonts" for="email">
                     Электронная почта*:
                   </label>
                   <input class="item__input item__input--size-m item__input--loge-email bold-fonts" type="email" name="email" required placeholder="Введите e-mail" id="email">
@@ -106,54 +106,61 @@
             </fieldset>
 
             <fieldset class="fieldset fieldset__impressions">
-              <legend class="fieldset-legend__radio bold-fonts">Ваше общее впечатление:</legend>
+              <legend class="fieldset__legend fieldset-legend__radio bold-fonts">Ваше общее впечатление:</legend>
               <ul class="fieldset__item clear-list">
                 <li class="fieldset__item item-radio">
                   <label class="item-radio__name bold-fonts">
-                    <input class="item--radio__radio" type="radio" name="impression" value="positive" checked>Скорее положительное
+                    <input class="item--radio__radio" type="radio" name="impression" value="positive" checked>
+                    <span class="item-radio__checkbox"></span>Скорее положительное
                   </label>
                 </li>
                 <li class="fieldset__item item-radio">
                   <label class="item-radio__name bold-fonts">
-                    <input class="item--radio__radio" type="radio" name="impression" value="negative">Скорее отрицательное
+                    <input class="item--radio__radio" type="radio" name="impression" value="negative">
+                    <span class="item-radio__checkbox"></span>Скорее отрицательное
                   </label>
                 </li>
                 <li class="fieldset__item item-radio">
                   <label class="item-radio__name bold-fonts">
-                    <input class="item--radio__radio" type="radio" name="impression" value="neutral">Затрудняюсь ответить
+                    <input class="item--radio__radio" type="radio" name="impression" value="neutral">
+                    <span class="item-radio__checkbox"></span>Затрудняюсь ответить
                   </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="fieldset fieldset__places">
-              <legend class="fieldset__legend bold-fonts">Посещенные<br> достопримечательности:</legend>
-              <ul class="fieldset__list clear-list">
+              <legend class="fieldset__legend fieldset__legend--stroke bold-fonts">Посещенные<br> достопримечательности:</legend>
+              <ul class="fieldset__list fieldset__list--grid clear-list">
                 <li class="fieldset__item item-checkbox">
                   <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Bridge-Of-Devil" checked>Мост Дьявола
+                    <input class="item__checkbox" type="checkbox" name="Bridge-Of-Devil" checked>
+                    <span class="item-checkbox__checkbox"></span>Мост Дьявола
                   </labeL>
                 </li>
                 <li class="fieldset__item item-checkbox">
                   <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="The-Bell-Mountain" checked>Гора-Колокол
+                    <input class="item__checkbox" type="checkbox" name="The-Bell-Mountain" checked>
+                    <span class="item-checkbox__checkbox"></span>Гора-Колокол
                   </labeL>
                 </li>
                 <li class="fieldset__item item-checkbox">
                   <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Slide-Park" checked>Слайд-парк
+                    <input class="item__checkbox" type="checkbox" name="Slide-Park" checked>
+                    <span class="item-checkbox__checkbox"></span>Слайд-парк
                   </labeL>
                 </li>
                 <li class="fieldset__item item-checkbox">
                   <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Red-Rocks">Красные скалы
+                    <input class="item__checkbox" type="checkbox" name="Red-Rocks">
+                    <span class="item-checkbox__checkbox"></span>Красные скалы
                   </labeL>
                 </li>
               </ul>
             </fieldset>
 
             <div class="fieldset fieldset__textarea">
-              <label class="fieldset-legend__textarea bold-fonts" for="my-impression">Опишите свои эмоции:</label>
+              <label class="fieldset__legend  fieldset__legend--stroke fieldset-legend__textarea bold-fonts" for="my-impression">Опишите свои эмоции:</label>
               <textarea class="textarea bold-fonts" name="my impressions" rows="5" placeholder="Опишите подробно все свои восторги" id="my-impression"></textarea>
             </div>
             <button class="button button__form">Отправить отзыв</button>
@@ -188,7 +195,9 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/Logo/htmlacademy.svg" width="27" height="34" alt="логотип HtmlAcademy">
+            <svg class="copyright__svg" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg>
           </a>
         </div>
     </footer>
