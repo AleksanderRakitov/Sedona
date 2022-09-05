@@ -1,6 +1,6 @@
 .hotel-map {
-    background-color: @white;
-    text-align: center;
+  background-color: @white;
+  text-align: center;
 }
 
 .hotel-map__title {
@@ -24,4 +24,18 @@
   color: @dark-100;
   margin: 0;
   padding-bottom: 27px;
+}
+
+.hotel-map__map {
+  background-image: url("../../source/img/picture/map-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 350px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../source/img/picture/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../source/img/picture/map-desktop.jpg");
+  }
 }

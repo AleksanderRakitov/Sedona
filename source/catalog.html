@@ -17,8 +17,11 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/Logo/sedona-mobile.svg" width="102" height="84" alt="логотип сайта Седона">
+        <a class="page-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/sedona-desktop.svg">
+            <img src="img/Logo/sedona-mobile.svg" width="102" height="84" alt="логотип сайта Седона">
+          </picture>
         </a>
         <nav class="main-nav  main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -63,7 +66,11 @@
             <footer class="gallery__footer">
               <figure class="figure">
                 <a href="#">
-                  <img class="figure__image-road" src="img/picture/road-mobile.jpg" width="280" height="280" alt="вид на трассу пустыни во время заката">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/picture/road-desktop.jpg 1x, img/picture/road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/picture/road-tablet.jpg 1x, img/picture/road-tablet@2x.jpg 2x">
+                    <img class="figure__image-road" src="img/picture/road-mobile.jpg" srcset="img/picture/road-mobile@2x.jpg 2x" width="280" height="280" alt="вид на трассу пустыни во время заката">
+                  </picture>
                 </a>
                 <div class="figure__container">
                   <div class="figure__container-text">
@@ -75,7 +82,11 @@
               </figure>
               <figure class="figure">
                 <a href="#">
-                  <img class="figure__image" src="img/picture/flower-mobile.jpg.png" width="280" height="280" alt="местное растение В Красных горах Седоны">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/picture/flower-desktop.jpg 1x, img/picture/flower-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/picture/flower-tablet.jpg 1x, img/picture/flower-tablet@2x.jpg 2x">
+                    <img class="figure__image" src="img/picture/flower-mobile.jpg" srcset="img/picture/flower-mobile@2x.jpg 2x" width="280" height="280" alt="местное растение В Красных горах Седоны">
+                  </picture>
                 </a>
                 <div class="figure__container">
                   <div class="figure__container-text">
@@ -87,7 +98,11 @@
               </figure>
               <figure class="figure">
                 <a href="#">
-                  <img class="figure__image" src="img/picture/serpentine-mobile.jpg.png" width="280" height="280" alt="серпантин в горах">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/picture/serpantine-desktop.jpg 1x, img/picture/serpantine-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/picture/serpantine-tablet.jpg 1x, img/picture/serpantine-tablet@2x.jpg 2x">
+                    <img class="figure__image" src="img/picture/serpantine-mobile.jpg" srcset="img/picture/serpantine-mobile@2x.jpg 2x" width="280" height="280" alt="серпантин в горах">
+                  </picture>
                 </a>
                 <div class="figure__container">
                   <div class="figure__container-text">
@@ -99,7 +114,11 @@
               </figure>
               <figure class="figure">
                 <a href="#">
-                  <img class="figure__image" src="img/picture/bridgOfDevil-mobile.png" width="280" height="280" alt="мост дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/picture/bridgeOfDevil-desktop.jpg 1x, img/picture/bridgeOfDevil-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/picture/bridgeOfDevil-tablet.jpg 1x, img/picture/bridgeOfDevil-tablet@2x.jpg 2x">
+                    <img class="figure__image" src="img/picture/bridgeOfDevil-mobile.jpg" srcset="img/picture/bridgeOfDevil-mobile@2x.jpg 2x" width="280" height="280" alt="мост дьявола">
+                  </picture>
                 </a>
                 <div class="figure__container">
                   <div class="figure__container-text">
@@ -117,7 +136,11 @@
             <h2 class="description__title description__title--size">Все еще сомневаетесь?</h2>
             <p class="description__slogan">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
           </div>
-          <img class="description__image" src="img/picture/video.jpg" width="320" height="201" alt="дорога серпантина">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/picture/video-desktop.jpg 1x, img/picture/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/picture/video-tablet.jpg 1x, img/picture/video-tablet@2x.jpg 2x">
+            <img class="description__image" src="img/picture/video-mobile.jpg" srcset="img/picture/video-mobile@2x.jpg 2x" width="320" height="201" alt="дорога серпантина">
+          </picture>
           <div class="video-presentation__panel video-panel">
             <div class="video-panel__range video-panel__range--pic">
             </div>
