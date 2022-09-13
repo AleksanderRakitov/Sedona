@@ -108,6 +108,10 @@
     min-height: 56px;
     box-shadow: none;
   }
+
+  @media (min-width: @desktop-width) {
+    justify-content: unset;
+  }
 }
 
 .main-nav__item {
@@ -211,6 +215,16 @@
 
     &:active {
       color: fade(@dark, 30%);
+    }
+  }
+
+  &--padding {
+    @media (min-width: @tablet-width) {
+      padding-left: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 23px;
     }
   }
 }

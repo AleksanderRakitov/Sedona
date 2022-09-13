@@ -15,10 +15,17 @@
     <title>HTML Academy: проект «Седона», форма отзыва</title>
   </head>
   <body class="page__body">
+    <svg style="display: none;">
+      <symbol id="htmlacademy-logo" viewBox="0 0 27 35">
+        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="currentColor"/>
+      </symbol>
+    </svg>
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="#">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/sedona-tablet.svg">
             <source media="(min-width: 1200px)" srcset="img/logo/sedona-desktop.svg">
             <img src="img/Logo/sedona-mobile.svg" width="102" height="84" alt="логотип сайта Седона">
           </picture>
@@ -39,13 +46,13 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="#">
+              <a class="main-nav__link main-nav__link--current main-nav__link--padding" href="#">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
-                Htmlacademy
+              <a class="main-nav__link main-nav__link--padding" href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
+                Html academy
               </a>
             </li>
           </ul>
@@ -57,9 +64,9 @@
           <img class="backimage__img" src="img/Logo/SEDONA.svg" width="229" height="30" alt="надпись на фоне седона">
         </div>
 
-        <section class="description">
-          <h1 class="description__title description__title--size">Оставьте свой отзыв</h1>
-          <p class="description__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
+        <section class="description description__form">
+          <h1 class="description__title description__title--size description__title--margin-top">Оставьте свой отзыв</h1>
+          <p class="description__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="description__break-tablet"> а также о посещенных вами достопримечательностях</p>
         </section>
 
         <section class="yourself">
@@ -77,15 +84,15 @@
                 </li>
                 <li class="fieldset__item item">
                   <label class="item__name normal-fonts" for="lastname">
-                    Фамалия*:
+                    Фамилия*:
                   </label>
-                  <input class="item__input bold-fonts" name="lastname" type="text" placeholder="Иванов" required id="lastname">
+                  <input class="item__input item__input--padding bold-fonts" name="lastname" type="text" placeholder="Иванов" required id="lastname">
                 </li>
                 <li class="fieldset__item item">
                   <labeL class="item__name normal-fonts" for="patronomic">
                     Отчество:
                   </labeL>
-                  <input class="item__input bold-fonts" name="patronymic" type="text" placeholder="Александрович" id="patronomic">
+                  <input class="item__input item__input--padding bold-fonts" name="patronymic" type="text" placeholder="Александрович" id="patronomic">
                 </li>
               </ul>
             </fieldset>
@@ -94,13 +101,13 @@
               <legend class="fieldset__legend fieldset-legend__contact bold-fonts fieldset__legend--stroke">Контактная информация:</legend>
               <ul class="fieldset__list fieldset__list--flex clear-list">
                 <li class="fieldset__item item-2">
-                  <label class="item__name item__name--margin normal-fonts" for="tel">
+                  <label class="item__name item__name--padding item__name--margin normal-fonts" for="tel">
                     <span class="hidden">Контактный</span> телефон*:
                   </label>
                   <input class="item__input item__input--size-m item__input--loge-phone bold-fonts" type="tel" name="tel" required placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" id="tel">
                   </li>
                 <li class="fieldset__item item-2">
-                  <label class="item__name item__name-email item__name--margin normal-fonts" for="email">
+                  <label class="item__name item__name--padding item__name-email item__name--margin normal-fonts" for="email">
                     Электронная почта*:
                   </label>
                   <input class="item__input item__input--size-m item__input--loge-email bold-fonts" type="email" name="email" required placeholder="Введите e-mail" id="email">
@@ -133,31 +140,35 @@
             </fieldset>
 
             <fieldset class="fieldset fieldset__places">
-              <legend class="fieldset__legend fieldset__legend--stroke bold-fonts">Посещенные<br> достопримечательности:</legend>
+              <legend class="fieldset__legend fieldset__legend--checkbox fieldset__legend--stroke bold-fonts">Посещенные<br> достопримечательности:</legend>
               <ul class="fieldset__list fieldset__list--grid clear-list">
                 <li class="fieldset__item item-checkbox">
-                  <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Bridge-Of-Devil" checked>
-                    <span class="item-checkbox__checkbox"></span>Мост Дьявола
+                  <labeL for="Bridge-Of-Devil" class="item-checkbox__name bold-fonts">
+                    Мост Дьявола
                   </labeL>
+                    <input class="item__checkbox" type="checkbox" name="Bridge-Of-Devil" id="Bridge-Of-Devil" checked>
+                    <span class="item-checkbox__checkbox"></span>
                 </li>
                 <li class="fieldset__item item-checkbox">
-                  <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="The-Bell-Mountain" checked>
-                    <span class="item-checkbox__checkbox"></span>Гора-Колокол
+                  <labeL for="The-Bell-Mountain" class="item-checkbox__name bold-fonts">
+                    Гора-Колокол
                   </labeL>
+                    <input class="item__checkbox" type="checkbox" name="The-Bell-Mountain" id="The-Bell-Mountain" checked>
+                    <span class="item-checkbox__checkbox"></span>
                 </li>
                 <li class="fieldset__item item-checkbox">
-                  <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Slide-Park" checked>
-                    <span class="item-checkbox__checkbox"></span>Слайд-парк
+                  <labeL for="Slide-Park" class="item-checkbox__name bold-fonts">
+                    Слайд-парк
                   </labeL>
+                    <input class="item__checkbox" type="checkbox" name="Slide-Park" id="Slide-Park" checked>
+                    <span class="item-checkbox__checkbox"></span>
                 </li>
                 <li class="fieldset__item item-checkbox">
-                  <labeL class="item-checkbox__name bold-fonts">
-                    <input class="item__checkbox" type="checkbox" name="Red-Rocks">
-                    <span class="item-checkbox__checkbox"></span>Красные скалы
+                  <labeL for="Red-Rocks" class="item-checkbox__name bold-fonts">
+                    Красные скалы
                   </labeL>
+                    <input class="item__checkbox" type="checkbox" name="Red-Rocks" id="Red-Rocks">
+                    <span class="item-checkbox__checkbox"></span>
                 </li>
               </ul>
             </fieldset>
@@ -196,10 +207,10 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано:</span>
             <svg class="copyright__svg" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              <use xlink:href="#htmlacademy-logo"></use>
             </svg>
           </a>
         </div>

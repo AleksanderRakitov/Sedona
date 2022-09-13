@@ -57,6 +57,12 @@
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 28px;
   }
 }
 
@@ -70,21 +76,29 @@
 }
 
 .fieldset__textarea {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: -5px;
+  margin-bottom: 29px;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-bottom: 58px;
+    margin-bottom: 35px;
   }
 }
 
 .fieldset__legend {
-  padding-top: 20px;
+  padding-top: 24px;
+
+  &--checkbox {
+    padding-top: 15px;
+  }
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 17px;
+
     &--stroke {
       display: flex;
       align-items: center;
@@ -96,12 +110,12 @@
       display: block;
       position: absolute;
       content: "";
-      width: 123px;
+      min-width: 123px;
       height: 1px;
       background-color: #dbdbdb;
 
       @media (min-width: @desktop-width) {
-        width: 280px;
+        min-width: 280px;
       }
     }
 
@@ -113,23 +127,37 @@
       right: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 13px;
+  }
 }
 
 .fieldset-legend__radio {
   margin-bottom: 36px;
+  padding-top: 18px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
     margin-bottom: 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 13px;
+    padding-left: 77px;
+  }
 }
 
 .fieldset-legend__contact {
   margin-bottom: 17px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .fieldset-legend__name {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .fieldset-legend__textarea {
@@ -153,17 +181,17 @@
 .fieldset__list {
   &--grid {
     @media (min-width: @tablet-width) {
-      margin: 47px 75px 75px 100px;
+      margin: 42px 75px 58px 100px;
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 60px 60px;
       grid-auto-rows: 60px;
-      row-gap: 40px;
+      gap: 28px 45px;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 47px 0 74px 0;
+      margin: 59px 0 49px 0;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
     }

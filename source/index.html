@@ -15,10 +15,17 @@
     <title>HTML Academy: проект «Седона»</title>
   </head>
   <body class="page__body">
+    <svg style="display: none;">
+      <symbol id="htmlacademy-logo" viewBox="0 0 27 35">
+        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="currentColor"/>
+      </symbol>
+    </svg>
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="#">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/sedona-tablet.svg">
             <source media="(min-width: 1200px)" srcset="img/logo/sedona-desktop.svg">
             <img src="img/Logo/sedona-mobile.svg" width="102" height="84" alt="логотип сайта Седона">
           </picture>
@@ -39,13 +46,13 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+              <a class="main-nav__link main-nav__link--padding" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-                Htmlacademy
+              <a class="main-nav__link main-nav__link--padding" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+                Html academy
               </a>
             </li>
           </ul>
@@ -58,7 +65,7 @@
         </div>
 
         <div class="description description--margin">
-          <h2 class="description__title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <h2 class="description__title">Седона &mdash; небольшой<br class="description__break-h2"> городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="description__slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
 
@@ -67,10 +74,13 @@
           <ol class="main-content__list main-list clear-list">
             <li class="main-content__item list-item main-content__item--layout">
               <div class="list-item__text list-item__text--pic">
-                <h3 class="title-content title-content--color">Настоящий<br> городок</h3>
-                <p class="slogan-content slogan-content--color slogan-content--counter">Седона не аттракцион для туристов, там<br>течёт своя жизнь</p>
+                <h3 class="title-content title-content--color">Настоящий<br class="title-content__break"> городок</h3>
+                <p class="slogan-content slogan-content--color slogan-content--counter">Седона не аттракцион для туристов,<br class="slogan-content__break-desktop"> там<br class="slogan-content__break-mobile"> течёт своя жизнь</p>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/picture/photo-city-desktop.webp 1x, img/picture/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/picture/photo-city-tablet.webp 1x, img/picture/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/picture/photo-city-mobile.webp 1x, img/picture/photo-city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/picture/photo-city-desktop.jpg 1x, img/picture/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/picture/photo-city-tablet.jpg 1x, img/picture/photo-city-tablet@2x.jpg 2x">
                 <img class="main-content__picture" src="img/picture/photo-city-mobile.jpg" srcset="img/picture/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="фото города Седона">
@@ -78,40 +88,43 @@
               <ul class="main-content__list-city clear-list">
                 <li class="main-content__item-city main-content__item-city--house">
                   <h3 class="title-content title-content--margin">Жильё</h3>
-                  <p class="slogan-content">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино</p>
+                  <p class="slogan-content">Рекомендуем пожить в<br class="slogan-content__break-mobile"> настоящем<br class="slogan-content__break-desktop"> мотеле, всё<br class="slogan-content__break-tablet slogan-content__break-tablet--hidden"> как в<br class="slogan-content__break-mobile"> кино!</p>
                 </li>
                 <li class="main-content__item-city main-content__item-city--box main-content__item-city--position">
                   <h3 class="title-content title-content--margin">Сувениры</h3>
-                  <p class="slogan-content">Не только китайского,<br> но и местного производства!</p>
+                  <p class="slogan-content">Не только китайского,<br class="slogan-content__break-desktop"> но и<br class="slogan-content__break-mobile"> местного производства!</p>
                 </li>
                 <li class="main-content__item-city main-content__item-city--food">
                   <h3 class="title-content title-content--margin">Еда</h3>
-                  <p class="slogan-content">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                  <p class="slogan-content">Всегда заказывайте фирменный бургер,<br class="slogan-content__break-burger-desktop"> вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="main-content__item list-item main-content__item--grid">
               <div class="list-item__text list-item__text--padding">
-                <h3 class="title-content title-content--color">Там есть<br> мост дьявола</h3>
+                <h3 class="title-content title-content--color">Там есть<br class="title-content__break"> мост дьявола</h3>
                 <p class="slogan-content slogan-content--color slogan-content--counter">Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
               </div>
               <picture class="main-content__picture-retina">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/picture/photo-bridge-desktop.webp 1x, img/picture/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/picture/photo-bridge-tablet.webp 1x, img/picture/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/picture/photo-bridge-mobile.webp 1x, img/picture/photo-bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/picture/photo-bridge-desktop.jpg 1x, img/picture/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/picture/photo-bridge-tablet.jpg 1x, img/picture/photo-bridge-tablet@2x.jpg 2x">
                 <img class="main-content__picture main-content__picture--order" src="img/picture/photo-bridge-mobile.jpg" srcset="img/picture/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото моста дьявола">
               </picture>
             </li>
             <li class="main-content__item main-content__item--size list-item  main-content__item--color">
-                <h3 class="title-content">Небольшая площадь</h3>
-                <p class="slogan-content slogan-content--counter">Все интересные места находятся<br>очень близко</p>
+                <h3 class="title-content">Небольшая<br class="title-content__break-desktop"> площадь</h3>
+                <p class="slogan-content slogan-content--counter">Все интересные места<br class="slogan-content__break-tablet slogan-content__break-tablet--hidden"> находятся<br class="slogan-content__break-mobile"> очень<br class="slogan-content__break-desktop-two"> близко</p>
             </li>
             <li class="main-content__item main-content__item--size list-item  main-content__item--color">
-                <h3 class="title-content">Красивая дорога</h3>
-                <p class="slogan-content slogan-content--counter">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+                <h3 class="title-content">Красивая<br class="title-content__break-desktop"> дорога</h3>
+                <p class="slogan-content slogan-content--counter">Ехать в Седону из<br class="slogan-content__break-tablet slogan-content__break-tablet--hidden"> Лас-Вегаса<br class="slogan-content__break-mobile"> совсем<br class="slogan-content__break-tablet"> не скучно!</p>
             </li>
             <li class="main-content__item main-content__item--size list-item  main-content__item--color">
-                <h3 class="title-content">Мало туристов</h3>
-                <p class="slogan-content slogan-content--counter">Большинство едет в гранд каньон<br>и толпится там</p>
+                <h3 class="title-content">Мало<br class="title-content__break-desktop"> туристов</h3>
+                <p class="slogan-content slogan-content--counter">Большинство едет в<br class="slogan-content__break-tablet slogan-content__break-tablet--hidden"> гранд каньон<br class="slogan-content__break-mobile"> и<br class="slogan-content__break-tablet"> толпится там</p>
             </li>
           </ol>
         </section>
@@ -119,8 +132,8 @@
         <div class="hotel-map">
           <div class="hotel-map__description">
             <p class="hotel-map__title">Заинтересовались?</p>
-            <p class="hotel-map__slogan">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="button button__hotel" href="#">Найти гостинницу</a>
+            <p class="hotel-map__slogan">Укажите предполагаемые даты поездки,<br class="hotel-map__break-desktop"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="button button__hotel" href="#">Найти гостиницу</a>
           </div>
           <div class="hotel-map__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1659612739145!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen title="карта местоположения Седоны"></iframe>
@@ -151,10 +164,10 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">Разработано:</span>
               <svg class="copyright__svg" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+                <use xlink:href="#htmlacademy-logo"></use>
               </svg>
             </a>
           </div>

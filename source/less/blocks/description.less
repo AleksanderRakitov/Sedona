@@ -4,9 +4,10 @@
 
   &--margin {
     margin-top: 32px;
+    margin-bottom: 27px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 43px;
+      margin-top: 45px;
       margin-bottom: 52px;
     }
 
@@ -18,9 +19,18 @@
 }
 
 .description__catalog {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 20px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 59px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 97px;
+  }
 
   &::after {
     content: "";
@@ -37,11 +47,19 @@
   }
 }
 
+.description__catalog-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .description__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   color: @dark;
 
   @media (min-width: @tablet-width) {
@@ -53,16 +71,42 @@
       font-size: 30px;
     }
   }
+
+  &--margin {
+    margin-bottom: 27px;
+  }
+
+  &--margin-top {
+    margin-bottom: 33px;
+  }
+}
+
+.description__form {
+  margin-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 71px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 113px;
+    margin-bottom: 45px;
+  }
 }
 
 .description__slogan {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 400;
   color: @dark-100;
 
   &--padding {
-    padding-bottom: 20px;
+    padding-bottom: 32px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 6px;
+    }
   }
 }
 
@@ -72,12 +116,31 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    min-width: 648px;
     height: 500px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 800px;
-    height: 683px;
+    min-width: 800px;
+  }
+}
+
+.description__break-h2 {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.description__break-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.description__break-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

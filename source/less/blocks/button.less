@@ -26,14 +26,19 @@
 
 .button__hotel {
   padding: 15px 32px 18px 32px;
-  width: 280px;
-  margin-bottom: 66px;
+  min-width: 280px;
+  margin-bottom: 48px;
   background-color: @darkblue;
   color: @white;
   font-size: 21px;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
+    min-width: 458px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
   }
 }
 

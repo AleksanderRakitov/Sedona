@@ -5,10 +5,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 6px;
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 45px;
   }
 }
 
@@ -20,12 +24,15 @@
 
 .page-footer__social {
   margin-top: 33px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .page-footer__copyright {
   font-size: 14px;
   line-height: 26px;
-  display: flex;
-  justify-content: center;
 }

@@ -1,13 +1,23 @@
-.copyright__svg {
-  margin-left: 10px;
-}
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 22px;
+  color: @dark;
 
-.copyright__svg path {
   &:hover {
-    fill: @darkblue;
+    color: @darkblue;
   }
 
   &:active {
-    fill: fade(@dark, 30%);
+    color: fade(@dark, 30%);
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.copyright__svg {
+  margin-left: 10px;
 }

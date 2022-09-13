@@ -61,23 +61,45 @@
   }
 }
 
-.video-panel__controls button {
+.video-panel__button {
   border: none;
   background-color: transparent;
   cursor: pointer;
   opacity: 1;
+  color: @grey-200;
+
+  &:hover {
+    color: @dark-100;
+  }
+
+  &:active {
+    color: fade(@dark-100, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    color: @white;
+
+    &:hover {
+      color: fade(@white, 60%);
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
 }
 
 .video-panel__replay {
-  margin-left: 25px;
-  margin-right: 133px;
+  margin-left: 20px;
+  margin-right: 120px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 473px;
+    margin-right: 462px;
+    margin-left: 28px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 625px;
+    margin-right: 611px;
   }
 }
 
@@ -91,26 +113,3 @@
   flex-grow: 1;
 }
 
-.video-panel__svg path {
-  cursor: pointer;
-
-  &:hover {
-    fill: @dark-100;
-  }
-
-  &:active {
-    fill: fade(@dark-100, 30%);
-  }
-
-  @media (min-width: @tablet-width) {
-    fill: @white;
-
-    &:hover {
-      fill: fade(@white, 60%);
-    }
-
-    &:active {
-      fill: fade(@white, 30%);
-    }
-  }
-}
