@@ -48,9 +48,11 @@
 .item-radio {
   margin-bottom: 43px;
   position: relative;
+  padding-left: 72px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
+    padding-left: 70px;
   }
 }
 
@@ -68,6 +70,7 @@
 
 .item-checkbox {
   position: relative;
+  padding-left: 73px;
 }
 
 .item-checkbox:not(:last-child) {
@@ -96,14 +99,12 @@
 
 .item-checkbox__name {
   text-transform: none;
-  padding-left: 77px;
 }
 
 .item__input {
-  padding: 10px;
-  padding-left: 22px;
+  padding: 17px 0 15px 23px;
+
   width: 192px;
-  height: 58px;
   background-color: @white-100;
   border: none;
   text-align: left;
@@ -180,15 +181,14 @@
 //Radio
 .item--radio__radio {
   appearance: none;
-  padding-left: 72px;
 }
 
 .item-radio__checkbox {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 55px;
+  height: 55px;
   left: 0;
-  top: -10px;
+  top: -16px;
   background-color: @white-100;
   border-radius: 50%;
 }
@@ -196,6 +196,12 @@
 //radio checked
 
 .item--radio__radio:checked + .item-radio__checkbox {
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z' fill='%23333333' stroke='%23333333' stroke-width='3'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.item-radio__checkbox:checked + .item-radio__checkbox {
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z' fill='%23333333' stroke='%23333333' stroke-width='3'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -218,16 +224,15 @@
 //checkbox
 .item__checkbox {
   appearance: none;
-  padding-left: 73px;
 }
 
 .item-checkbox__checkbox {
   appearance: none;
   position: absolute;
-  width: 46px;
-  height: 46px;
-  left: 0;
-  top: -10px;
+  width: 55px;
+  height: 55px;
+  left: -1px;
+  top: -16px;
   background-color: @white-100;
 }
 
