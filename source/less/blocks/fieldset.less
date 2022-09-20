@@ -158,6 +158,11 @@
 
 .fieldset-legend__name {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-bottom: 55px;
+  }
 }
 
 .fieldset-legend__textarea {
@@ -168,13 +173,6 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
     display: flex;
-  }
-}
-
-.fieldset-legend__name {
-  @media (min-width: @tablet-width) {
-    text-align: left;
-    margin-bottom: 55px;
   }
 }
 
