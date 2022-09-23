@@ -13,3 +13,9 @@ source/css/*.map
 Thumbs.db
 node.exe
 build
+*.html
+js
+img
+css
+fonts
+less
