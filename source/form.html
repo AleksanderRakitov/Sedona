@@ -10,6 +10,9 @@
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
     <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -66,8 +69,8 @@
         </div>
 
         <section class="description description__form">
-          <h1 class="description__title description__title--size description__title--margin-top">Оставьте свой отзыв</h1>
-          <p class="description__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="description__break-tablet"> а также о посещенных вами достопримечательностях</p>
+          <h1 class="description__title description__title-form description__title--size description__title--margin-top">Оставьте свой отзыв</h1>
+          <p class="description__slogan description__slogan-form">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="description__break-tablet"> а также о посещенных вами достопримечательностях</p>
         </section>
 
         <section class="yourself">
@@ -81,13 +84,13 @@
                   <label class="item__name normal-fonts" for="name">
                     Имя*:
                   </label>
-                  <input class="item__input item__input-name item__input--size-s bold-fonts" name="name" type="text" placeholder="Петр" required id="name">
+                  <input class="item__input item__input-name item__input--size-s bold-fonts" name="name" type="text" placeholder="Петр" id="name">
                 </li>
                 <li class="fieldset__item item">
                   <label class="item__name normal-fonts" for="lastname">
                     Фамилия*:
                   </label>
-                  <input class="item__input item__input--padding item__input-lastname bold-fonts" name="lastname" type="text" placeholder="Иванов" required id="lastname">
+                  <input class="item__input item__input--padding item__input-lastname bold-fonts" name="lastname" type="text" placeholder="Иванов" id="lastname">
                 </li>
                 <li class="fieldset__item item">
                   <labeL class="item__name normal-fonts" for="patronomic">
@@ -105,13 +108,13 @@
                   <label class="item__name item__name--padding item__name--margin normal-fonts" for="tel">
                     <span class="hidden">Контактный</span> телефон*:
                   </label>
-                  <input class="item__input item__input-phone item__input--size-m item__input--loge-phone bold-fonts" type="tel" name="tel" required placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" id="tel">
+                  <input class="item__input item__input-phone item__input--size-m item__input--loge-phone bold-fonts" type="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" id="tel">
                   </li>
-                <li class="fieldset__item item-2">
+                <li class="fieldset__item item-2 item-2--gap">
                   <label class="item__name item__name--padding item__name-email item__name--margin normal-fonts" for="email">
                     Электронная почта*:
                   </label>
-                  <input class="item__input item__input-email item__input--size-m item__input--loge-email bold-fonts" type="email" name="email" required placeholder="Введите e-mail" id="email">
+                  <input class="item__input item__input-email item__input--size-m item__input--loge-email bold-fonts" type="email" name="email" placeholder="Введите e-mail" id="email">
                 </li>
               </ul>
             </fieldset>
@@ -219,22 +222,25 @@
           </a>
         </div>
     </footer>
-    <section class="modal modal__fail">
-      <div class="modal__wrapper-fail">
+    <section class="modal modal__fail" aria-hidden="true">
+      <div class="modal__fail-wrapper">
         <h2 class="modal__title">Что-то пошло&nbsp;<br class="modal__break-tablet"> не так!</h2>
         <p class="modal__text">Проверьте поля, выделенные<br class="modal__break-mobile"> красным,<br class="modal__break-tablet"> скорее всего вы<br class="modal__break-mobile"> забыли их заполнить</p>
         <button class="button button__modal-fail modal__close">ок</button>
       </div>
     </section>
 
-    <section class="modal modal__success">
-      <div class="modal__wrapper-success">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+    <section class="modal modal__success" aria-hidden="true">
+      <div class="modal__success-wrapper">
+        <div class="modal__success-text">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__wrapper-button">
+          <button type="submit" class="button button__modal-success modal__close">закрыть окно</button>
+        </div>
       </div>
-      <div class="modal__wrapper-button">
-        <button type="submit" class="button button__modal-success modal__close">закрыть окно</button>
-      </div>
+
     </section>
     </div>
     <script src="js/main-nav.min.js"></script>

@@ -25,13 +25,49 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.min.css"))
+    .pipe(rename({
+      suffix: ".min"
+    }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const normalizeStyles = () => {
+  return gulp.src("source/less/normalize.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.normalizeStyles = normalizeStyles;
+
+const workStyles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+
+exports.workStyles = workStyles;
 
 // HTML
 
@@ -164,6 +200,8 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    workStyles,
+    normalizeStyles,
     html,
     scripts,
     sprite,
@@ -182,6 +220,8 @@ exports.default = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    workStyles,
+    normalizeStyles,
     html,
     scripts,
     sprite,

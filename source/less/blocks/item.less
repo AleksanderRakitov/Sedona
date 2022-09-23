@@ -15,6 +15,12 @@
   gap: 8px;
   position: relative;
 
+  &--gap {
+    @media (min-width: @desktop-width) {
+      gap: 19px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
   }
@@ -48,11 +54,15 @@
 .item-radio {
   margin-bottom: 43px;
   position: relative;
-  padding-left: 72px;
+  padding-left: 71px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 53px;
-    padding-left: 70px;
+    margin-bottom: 52px;
+    padding-left: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 72px;
   }
 }
 
@@ -70,7 +80,7 @@
 
 .item-checkbox {
   position: relative;
-  padding-left: 73px;
+  padding-left: 72px;
 }
 
 .item-checkbox:not(:last-child) {
@@ -103,7 +113,6 @@
 
 .item__input {
   padding: 17px 0 15px 23px;
-
   width: 192px;
   background-color: @white-100;
   border: none;
@@ -176,6 +185,11 @@
 
 .item__input::placeholder {
   color: @dark;
+}
+
+.item__input:focus::placeholder,
+.textarea:focus::placeholder {
+  color: transparent;
 }
 
 //Radio

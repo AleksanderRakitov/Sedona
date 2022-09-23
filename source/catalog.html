@@ -10,6 +10,9 @@
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
     <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -80,8 +83,8 @@
         </div>
 
         <section class="description description__catalog">
-          <h1 class="description__title description__title--size description__title--margin">Фото и видео</h1>
-          <p class="description__slogan description__slogan--padding">Не можете решиться на путешествие из-за курса?<br class="description__catalog-break"> Фотографии помогут вам забыть о политике и экономике.</p>
+          <h1 class="description__title description__title-catalog description__title--size description__title--margin">Фото и видео</h1>
+          <p class="description__slogan description__slogan-catalog description__slogan--padding">Не можете решиться на путешествие из-за курса?&ensp;<br class="description__catalog-break">Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
 
         <section class="gallery">
@@ -119,7 +122,7 @@
                     <source type="image/webp" src="img/picture/flower-mobile.webp" srcset="img/picture/flower-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/picture/flower-desktop.jpg 1x, img/picture/flower-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/picture/flower-tablet.jpg 1x, img/picture/flower-tablet@2x.jpg 2x">
-                    <img class="figure__image" src="img/picture/flower-mobile.jpg" srcset="img/picture/flower-mobile@2x.jpg 2x" width="280" height="280" alt="местное растение В Красных горах Седоны">
+                    <img class="figure__image" src="img/picture/flower-mobile.jpg" srcset="img/picture/flower-mobile@2x.jpg 2x" width="280" height="280" alt="местное растение В Красных горах Седоны" loading="lazy">
                   </picture>
                 </a>
                 <div class="figure__container">
@@ -143,7 +146,7 @@
                     <source type="image/webp" src="img/picture/serpantine-mobile.webp" srcset="img/picture/serpantine-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/picture/serpantine-desktop.jpg 1x, img/picture/serpantine-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/picture/serpantine-tablet.jpg 1x, img/picture/serpantine-tablet@2x.jpg 2x">
-                    <img class="figure__image" src="img/picture/serpantine-mobile.jpg" srcset="img/picture/serpantine-mobile@2x.jpg 2x" width="280" height="280" alt="серпантин в горах">
+                    <img class="figure__image" src="img/picture/serpantine-mobile.jpg" srcset="img/picture/serpantine-mobile@2x.jpg 2x" width="280" height="280" alt="серпантин в горах" loading="lazy">
                   </picture>
                 </a>
                 <div class="figure__container">
@@ -167,7 +170,7 @@
                     <source type="image/webp" src="img/picture/bridgeOfDevil-mobile.webp" srcset="img/picture/bridgeOfDevil-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/picture/bridgeOfDevil-desktop.jpg 1x, img/picture/bridgeOfDevil-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/picture/bridgeOfDevil-tablet.jpg 1x, img/picture/bridgeOfDevil-tablet@2x.jpg 2x">
-                    <img class="figure__image" src="img/picture/bridgeOfDevil-mobile.jpg" srcset="img/picture/bridgeOfDevil-mobile@2x.jpg 2x" width="280" height="280" alt="мост дьявола">
+                    <img class="figure__image" src="img/picture/bridgeOfDevil-mobile.jpg" srcset="img/picture/bridgeOfDevil-mobile@2x.jpg 2x" width="280" height="280" alt="мост дьявола" loading="lazy">
                   </picture>
                 </a>
                 <div class="figure__container">
@@ -188,8 +191,8 @@
 
         <article class="video-presentation">
           <div class="description video-presentation__description">
-            <h2 class="description__title description__title--size">Все еще сомневаетесь?</h2>
-            <p class="description__slogan">Смотрите видеопрезентацию и<br class="description__break-mobile"> скорее за билетами, пока они<br class="description__break-tablet"> не<br class="description__break-mobile"> подорожали в очередной раз!</p>
+            <h2 class="description__title description__title-video description__title--size">Все еще сомневаетесь?</h2>
+            <p class="description__slogan description__slogan-video">Смотрите видеопрезентацию и&ensp;<br class="description__break-mobile">скорее за билетами, пока они&ensp;<br class="description__break-tablet">не<br class="description__break-mobile"> подорожали в очередной раз!</p>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/picture/video-desktop.webp 1x, img/picture/video-desktop@2x.webp 2x">
@@ -197,7 +200,7 @@
             <source type="image/webp" src="img/picture/video-mobile.webp" srcset="img/picture/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/picture/video-desktop.jpg 1x, img/picture/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/picture/video-tablet.jpg 1x, img/picture/video-tablet@2x.jpg 2x">
-            <img class="description__image" src="img/picture/video-mobile.jpg" srcset="img/picture/video-mobile@2x.jpg 2x" width="320" height="201" alt="дорога серпантина">
+            <img class="description__image" src="img/picture/video-mobile.jpg" srcset="img/picture/video-mobile@2x.jpg 2x" width="320" height="201" alt="дорога серпантина" loading="lazy">
           </picture>
           <div class="video-presentation__panel video-panel">
             <div class="video-panel__range video-panel__range--pic">

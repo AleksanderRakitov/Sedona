@@ -46,9 +46,19 @@
   font-size: 14px;
   line-height: 24px;
 
+
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 3px;
+  }
+
+
   &--margin {
     @media (min-width: @tablet-width) {
-      margin-top: 4px;
+      margin-top: 0;
     }
   }
 
@@ -111,11 +121,11 @@
 
 .figure__likes {
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   font-weight: bold;
   color: @dark;
   /*padding-left: 37px;*/
-  margin-top: 13px;
+  margin-top: 11px;
   position: relative;
   cursor: pointer;
 
