@@ -1,0 +1,97 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  font-family: inherit;
+}
+
+.button__form {
+  border: none;
+  padding: 19px 33px 14px 23px;
+  min-width: 280px;
+  background-color: @darkblue;
+  color: @white;
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.button__hotel {
+  padding: 15px 32px 18px 32px;
+  min-width: 280px;
+  margin-bottom: 48px;
+  background-color: @darkblue;
+  color: @white;
+  font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 458px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.button__hotel:hover,
+.button__form:hover {
+  background-color: @darkblue-100;
+}
+
+.button__hotel:active,
+.button__form:active {
+  background-color: @darkblue-200;
+}
+
+.button__modal-fail {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 22px;
+  display: inline-block;
+  padding: 18px 64px 14px;
+  background-color: @darkblue;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 108px 14px;
+    font-size: 21px;
+  }
+}
+
+.button__modal-success {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 20px;
+  display: inline-block;
+  padding: 18px 62px 14px 60px;
+  background-color: @darkblue;
+  color: @white;
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 140px 14px;
+    font-size: 21px;
+    margin: 44px 91px;
+    min-width: 460px;
+  }
+}
+
+.button__modal-fail:hover,
+.button__modal-success:hover {
+  background-color: @darkblue-100;
+}
+
+.button__modal-fail:active,
+.button__modal-success:active {
+  background-color: @darkblue-200;
+}

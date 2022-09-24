@@ -1,0 +1,157 @@
+.figure {
+  margin: 0;
+  margin-top: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: @grey;
+    bottom: 0;
+    left: -20px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.figure__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: @white-100;
+    min-height: 80px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: fade(@dark, 30%);
+    margin-top: -80px;
+    opacity: 0.99;
+  }
+}
+
+.figure__title {
+  color: @dark;
+  font-weight: 700;
+  margin-top: 11px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  line-height: 24px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 3px;
+  }
+
+
+  &--margin {
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.figure__image-road {
+  width: 280px;
+  height: 280px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+.figure__image {
+  width: 280px;
+  height: 280px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.figure__caption {
+  text-transform: none;
+  color: @dark-100;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.figure__likes {
+  display: flex;
+  padding-bottom: 17px;
+  font-weight: bold;
+  color: @dark;
+  /*padding-left: 37px;*/
+  margin-top: 11px;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    margin: 0;
+    align-self: center;
+    min-width: 82px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.figure__svg {
+  margin-right: 14px;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,32 @@
+.page-header {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-header__logo img {
+  height: 84px;
+  position: absolute;
+  bottom: -27px;
+  left: calc(50% - 51px);
+  z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: auto;
+    left: calc(50% - 92px);
+    top: 0;
+  }
+
+  /*@media (min-width: @desktop-width) {
+    width: auto;
+    max-width: 187px;
+    height: 96px;
+    top: 0;
+    background-image: url("../img/logo/Vector.svg");
+    background-position: -42px 0;
+    background-repeat: no-repeat;
+  }*/
+}

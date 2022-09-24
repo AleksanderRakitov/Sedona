@@ -1,0 +1,20 @@
+.textarea {
+  padding: 13px 22px 15px 22px;
+  min-width: 280px;
+  background-color: @white-100;
+  border: none;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 22px 15px 22px;
+    width: 100%;
+  }
+}
+
+.textarea::placeholder {
+  color: @dark;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+}
