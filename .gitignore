@@ -6,6 +6,17 @@
 *.pdf
 *.psd
 *.sublime*
+.github
+.editorconfig
+.gitattributes
+.gitignore
+.stylelintrc
+gosha.sh
+gulpfile.jsmanifest.webmanifest
+package.json
+package-lock.json
+Readme.md
+Contributing.md
 node_modules/
 npm-debug.*
 source/css/*.css
@@ -19,3 +30,4 @@ img
 css
 fonts
 less
+source
